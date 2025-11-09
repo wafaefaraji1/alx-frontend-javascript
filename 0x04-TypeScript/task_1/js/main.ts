@@ -35,7 +35,7 @@ interface StudentClassInterface {
 
 // ---------------- Implementations ----------------
 
-// Director example
+// Example Director object
 const director1: Directors = {
   firstName: "John",
   lastName: "Doe",
@@ -51,7 +51,9 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
   return `${firstName.charAt(0)}. ${lastName}`;
 };
 
-console.log(printTeacher("John", "Doe")); // Output: J. Doe
+// Example usage of printTeacher
+console.log(printTeacher("John", "Doe"));      // Output: J. Doe
+console.log(printTeacher("Wafae", "Faraji"));  // Output: W. Faraji
 
 // StudentClass implementation
 class StudentClass implements StudentClassInterface {
